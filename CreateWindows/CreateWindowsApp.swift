@@ -14,8 +14,16 @@ struct CreateWindowsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartingView()
                 .environment(appModel)
+        }
+        
+        WindowGroup(id: "Window 1") {
+            SampleView(color: .blue, text: "Window 1")
+        }
+        
+        WindowGroup(id: "Window 2") {
+            SampleView(color: .blue, text: "Window 2")
         }
 
         ImmersiveSpace(id: appModel.immersiveSpaceID) {
