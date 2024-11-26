@@ -13,5 +13,10 @@ struct WorkingWithWindowsApp: App {
         WindowGroup {
             ContentView()
         }
+        
+        // 앱의 메인 뷰에서 새로 생성되는 WindowGroup
+        WindowGroup("New Window", for: NewWindowID.ID.self) { $id in
+            NewWindowView(id: id ?? 1)
+        }
     }
 }
