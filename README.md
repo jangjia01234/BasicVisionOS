@@ -1,6 +1,6 @@
 # Basic Vision OS
 - Now practicing on basic visionOS challenges
-- This repository is a set of visionOS tutorials (from Apple)
+- This repository is a set of visionOS tutorials (from Apple and other resources)
 
 | Day | Title | - |
 |:--|:--|:--:|
