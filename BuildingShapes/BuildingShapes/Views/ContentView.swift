@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
-//import RealityKit
-//import RealityKitContent
 
 struct ContentView: View {
     var body: some View {
-        ShapeView()
+        VStack {
+            Shapes2DView()
+            Shapes3DView()
+        }
     }
 }
 
